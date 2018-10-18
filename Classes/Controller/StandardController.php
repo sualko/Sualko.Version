@@ -36,6 +36,9 @@ class StandardController extends ActionController
             $versions[$package->getPackageKey()] = $package->getInstalledVersion();
         }
 
+        $this->controllerContext->getResponse()->setHeader('Access-Control-Allow-Origin', '*');
+        $this->controllerContext->getResponse()->setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+
         $this->view->assign('value', $versions);
     }
 }
