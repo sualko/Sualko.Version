@@ -1,0 +1,18 @@
+{
+    "description": "Makes version of Neos.Neos and Neos.Flow available via REST API.",
+    "type": "neos-package",
+    "name": "sualko/version",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sualko\\Version\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sualko.Version"
+        }
+    }
+}

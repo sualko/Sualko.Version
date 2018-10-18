@@ -1,0 +1,11 @@
+privilegeTargets:
+  Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'Sualko.Version:StandardControllerActions':
+      matcher: 'method(Sualko\Version\Controller\StandardController->(index)Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Sualko.Version:StandardControllerActions'
+        permission: GRANT
