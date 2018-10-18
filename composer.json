@@ -3,7 +3,7 @@
     "type": "neos-package",
     "name": "sualko/version",
     "require": {
-        "neos/flow": "*"
+        "neos/neos": "~3.3 || ~4.0"
     },
     "license": "MIT",
     "autoload": {
